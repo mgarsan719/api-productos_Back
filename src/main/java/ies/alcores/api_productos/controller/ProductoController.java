@@ -18,8 +18,6 @@ public class ProductoController {
     @Autowired
     private ProductoService productoService;
 
-    //HOla aaaaa
-
     @GetMapping("")
     public ResponseEntity<List<Producto>> findAll(){
         return ResponseEntity.ok(this.productoService.findAll());
